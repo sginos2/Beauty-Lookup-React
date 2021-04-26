@@ -3,7 +3,7 @@
 function CosmetCard() {
     return (
         <div className='CosmetCard'>
-            <img src={'./'}/>
+            <img src='#' alt='cosmetologist'/>
             <h3>Jane Doe</h3>
             <h4>Nail Technician</h4>
             <button>See More</button>
