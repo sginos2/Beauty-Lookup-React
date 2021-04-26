@@ -1,0 +1,1 @@
+//photo, name, title, 'see more' button for individual cosmetologist
