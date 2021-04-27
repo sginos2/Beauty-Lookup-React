@@ -8,6 +8,7 @@ import Profile from '../views/protected/Profile';
 import Finder from '../views/protected/Finder';
 import Logout from '../views/protected/Logout';
 import ProtectedRoute from '../components/ProtectedRoute';
+import IndividualCosmet from '../views/protected/Cosmetologist';
 import logo from '../esthetician.png';
 
 function Header() {
@@ -60,6 +61,12 @@ function Header() {
                 </Route>
                 <ProtectedRoute exact path='/profile'>
                     <Profile/>
+                </ProtectedRoute>
+                <ProtectedRoute exact path='/finder'>
+                    <Finder/>
+                </ProtectedRoute>
+                <ProtectedRoute exact path='/cosmetologist'>
+                    <IndividualCosmet/>
                 </ProtectedRoute>
                 <ProtectedRoute exact path='/finder'>
                     <Finder/>

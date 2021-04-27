@@ -1,4 +1,4 @@
-//photo, name, title, 'see more' button for individual cosmetologist
+import { Link } from 'react-router-dom';
 
 let cosmetologists = 
 {
@@ -30,7 +30,7 @@ function CosmetCard() {
                 <p>{cosmetologists[1].name}</p>
                 <p>{cosmetologists[1].title}</p>
             </div>
-            <button>See More</button>
+            <Link to='/cosmetologist'><button>See More</button></Link>
         </div>
     )
 }

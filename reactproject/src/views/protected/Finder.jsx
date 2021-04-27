@@ -4,6 +4,7 @@
 //on click of card's 'see more' button, navigate to individual cosmetologist page
 import CosmetCard from '../../components/CosmetCard';
 
+////need to loop through cosmetologists object and generate cards with different info
 function Finder() {
     return (
         <div className='Finder'>
