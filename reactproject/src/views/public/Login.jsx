@@ -17,7 +17,7 @@ function Login(props) {
     const handleChange = ({ target: {value, name}}) => {
         setCredentials({
             ...credentials,
-            [name]: value,
+            [name]: value
         })
     }
     return (

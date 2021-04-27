@@ -13,6 +13,14 @@ function Finder() {
                 <CosmetCard/>
                 <CosmetCard/>
                 <CosmetCard/>
+                <br/>
+                <CosmetCard/>
+                <CosmetCard/>
+                <CosmetCard/>
+                <br/>
+                <CosmetCard/>
+                <CosmetCard/>
+                <CosmetCard/>
             </div>
         </div>
     )

@@ -8,6 +8,7 @@ import Profile from '../views/protected/Profile';
 import Finder from '../views/protected/Finder';
 import Logout from '../views/protected/Logout';
 import ProtectedRoute from '../components/ProtectedRoute';
+import logo from '../esthetician.png';
 
 function Header() {
     const location = useLocation();
@@ -15,6 +16,9 @@ function Header() {
     return (
         <div className='Header'>
             <Menu>
+                <Menu.Item name='logo' active={location.pathname === '/home'}>
+                    <Link to='/home'><img className='logo' src={logo} alt='logo'></img></Link>
+                </Menu.Item>
                 <Menu.Item name='home' active={location.pathname === '/home'}>
                     <Link to='/home'>Home</Link>
                 </Menu.Item>
