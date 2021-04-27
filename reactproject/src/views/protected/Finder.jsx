@@ -2,7 +2,7 @@
 //search bar and filter components
 //generate card components for each cosmetologist/esthetician
 //on click of card's 'see more' button, navigate to individual cosmetologist page
-import CosmetCard from '../../components/CosmetCard'
+import CosmetCard from '../../components/CosmetCard';
 
 function Finder() {
     return (
