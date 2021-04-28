@@ -9,7 +9,7 @@ import Finder from '../views/protected/Finder';
 import Logout from '../views/protected/Logout';
 import ProtectedRoute from '../components/ProtectedRoute';
 import IndividualCosmet from '../views/protected/Cosmetologist';
-import logo from '../esthetician.png';
+import logo from '../assets/esthetician.png';
 
 function Header() {
     const location = useLocation();

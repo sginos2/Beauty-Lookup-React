@@ -1,10 +1,9 @@
-//show 'finder' tab on header after login
 //search bar and filter components
 //generate card components for each cosmetologist/esthetician
 //on click of card's 'see more' button, navigate to individual cosmetologist page
 import CosmetCard from '../../components/CosmetCard';
 
-////need to loop through cosmetologists object and generate cards with different info
+//need to loop through cosmetologists object and generate cards with different info
 function Finder() {
     return (
         <div className='Finder'>
@@ -14,11 +13,9 @@ function Finder() {
                 <CosmetCard/>
                 <CosmetCard/>
                 <CosmetCard/>
-                <br/>
                 <CosmetCard/>
                 <CosmetCard/>
                 <CosmetCard/>
-                <br/>
                 <CosmetCard/>
                 <CosmetCard/>
                 <CosmetCard/>

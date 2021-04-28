@@ -1,0 +1,1 @@
+//on cosmetologist page, scroll to see a leave review box
