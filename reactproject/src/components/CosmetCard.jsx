@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { Button, Image } from 'semantic-ui-react';
+
 
 let cosmetologists = 
 {
@@ -24,13 +26,13 @@ function CosmetCard() {
     return (
         <div className='CosmetCard'>
             <div className='cosimage'>
-                <img className='cosprofile' src={cosmetologists[1].image} alt='cosmetologist'/>
+                <Image src={cosmetologists[1].image} size='tiny' circular />
             </div>
             <div className='costext'>
                 <p>{cosmetologists[1].name}</p>
                 <p>{cosmetologists[1].title}</p>
+                <Link to='/cosmetologist'><Button>See More</Button></Link>
             </div>
-            <Link to='/cosmetologist'><button>See More</button></Link>
         </div>
     )
 }

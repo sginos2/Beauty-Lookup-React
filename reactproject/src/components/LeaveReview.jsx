@@ -1,11 +1,16 @@
-//on cosmetologist page, scroll to see a leave review box
+import { Button, Form } from 'semantic-ui-react';
+
 
 function LeaveReview() {
     return (
         <div className='leavereview'>
-            <h3>Leave A Review</h3>
-            <textarea placeholder='Leave your review...'></textarea>
-            <button>Submit</button>
+            <Form>
+                <Form.Field>
+                    <label>Leave a Review</label>
+                    <input/>
+                </Form.Field>
+                <Button>Submit</Button>
+            </Form>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import { Form } from 'semantic-ui-react';
+import { Form, Button } from 'semantic-ui-react';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../dataLayer/AuthContext';
 import { Redirect } from 'react-router-dom';
@@ -31,7 +31,7 @@ function Login(props) {
                     <label>Password</label>
                     <input type="password" onChange={handleChange} name='password'/>
                 </Form.Field>
-                <button type='submit'>Submit</button>
+                <Button type='submit'>Submit</Button>
             </Form>
         </div>    
     )

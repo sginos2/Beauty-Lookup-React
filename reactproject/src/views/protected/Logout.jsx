@@ -2,6 +2,7 @@
 // import { useContext, useState } from 'react';
 // import { AuthContext } from '../../dataLayer/AuthContext';
 // import { Redirect } from 'react-router-dom';
+import { Button } from 'semantic-ui-react';
 
 function Logout() {
     // const { isAuthed } = useContext(AuthContext);
@@ -14,7 +15,7 @@ function Logout() {
 
     return (
         <div className='Logout'>
-            <button onClick={handleClick}>Log Out</button>
+            <Button onClick={handleClick}>Log Out</Button>
         </div>
     )
 }
