@@ -12,10 +12,11 @@ function Finder() {
                 <Search/>
                 <Dropdown text='Filter'>
                     <Dropdown.Menu>
-                        <Dropdown.Item text='A-Z'/>
-                        <Dropdown.Item text='Z-A'/>
-                        <Dropdown.Item text='Price: Low to High'/>
-                        <Dropdown.Item text='Price: High to Low'/>
+                        <Dropdown.Item text='All A-Z'/>
+                        <Dropdown.Item text='Cosmetologists'/>
+                        <Dropdown.Item text='Estheticians'/>
+                        <Dropdown.Item text='Hair Stylists'/>
+                        <Dropdown.Item text='Nail Technicians'/>
                     </Dropdown.Menu>
                 </Dropdown>
             </div>
