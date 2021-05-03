@@ -17,8 +17,11 @@ function Header() {
     return (
         <div className='Header'>
             <Menu borderless>
-                <Menu.Item link name='logo' active={location.pathname === '/home'}>
-                    <Link to='/home'><img className='logo' src={logo} alt='logo'></img></Link>
+                <Menu.Item name='logo'>
+                    <img className='logo' src={logo} alt='logo'></img>
+                </Menu.Item>
+                <Menu.Item id='title'>
+                    <h2>Beauty Look-Up</h2>
                 </Menu.Item>
                 <Menu.Item link name='home' active={location.pathname === '/home'}>
                     <Link to='/home'>Home</Link>
@@ -51,15 +54,6 @@ function Header() {
                         </Menu.Menu>
                     )
                 }
-                {/* {
-                    isAuthed && (
-                        <Menu.Menu position='right'>
-                            <Menu.Item link name='logout' active={location.pathname === '/logout'}>
-                                <Link to='/logout'>Log Out</Link>
-                            </Menu.Item>
-                        </Menu.Menu>
-                    )
-                } */}
             </Menu>
             <Switch>
                 <Route exact path='/home'>
