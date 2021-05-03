@@ -73,7 +73,7 @@ function IndividualCosmet() {
         <>  
             <div className='individualcosmettop'>
                 <div className='individualcosmetinfo'>
-                    <Image className='marysue' src={cosmetologists[0].image} size='small' circular/>
+                    <Image className='indivisualcosmetimage' src={cosmetologists[0].image} size='small' circular/>
                     <p>{cosmetologists[0].name}<br/>{cosmetologists[0].title}<br/>Rating: {cosmetologists[0].rating}/5</p>
                 </div>
                 <div className='aboutcosmet'>

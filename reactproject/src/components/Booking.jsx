@@ -3,7 +3,7 @@
 //list of services and checkboxes next to them
 //all fields must be filled for form to submit
 //'book now' button will activate a toast with confirmation and will clear form fields
-import { Button, Checkbox, Form, Input, Select } from 'semantic-ui-react'
+import { Checkbox, Form, Input, Select } from 'semantic-ui-react'
 
 let cosmetologists = 
 {
@@ -77,14 +77,15 @@ const options = [
 ]
 
 function Booking() {
+
     return (
         <div className='bookappointment'>
             <h2>Book an Appointment</h2>
             <Form>
                 <Form.Group widths='equal'>
-                    <Form.Field control={Input} label='First name:' placeholder='First name'/>
-                    <Form.Field control={Input} label='Last name:' placeholder='Last name'/>
-                    <Form.Field control={Input} label='Phone Number:' placeholder='Phone Number'/>
+                    <Form.Field required control={Input} label='First name:' placeholder='First name'/>
+                    <Form.Field required control={Input} label='Last name:' placeholder='Last name'/>
+                    <Form.Field required control={Input} label='Phone Number:' placeholder='Phone Number'/>
                 </Form.Group>
                 <Form.Group inline>
                     <label>Services:</label>
@@ -97,7 +98,7 @@ function Booking() {
                     <input type='date'/>
                     <Form.Field control={Select} options={options} placeholder='Time'/>
                 </Form.Group>
-                <Form.Field control={Button}>Book Now</Form.Field>
+                <Form.Button content='Submit'>Book Now</Form.Button>
             </Form>
         </div>
     )

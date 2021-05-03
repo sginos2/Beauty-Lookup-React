@@ -5,7 +5,6 @@
 function Profile() {
     return (
         <div className='Profile'>
-            <h2>Name</h2>
             <h2>email@email.com</h2>
         </div>
     )

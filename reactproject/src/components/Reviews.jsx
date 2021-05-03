@@ -9,7 +9,7 @@ function Reviews() {
                 <Image src={userImage} avatar />
                 <span>user1987</span>
             </div>
-            <h4>Rating: 4.5/5 stars (star icons)</h4>
+            <h4>Rating: 4.5/5</h4>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, recusandae sunt libero molestias, et, beatae deleniti dolore blanditiis sint itaque eveniet corporis mollitia similique maxime vel numquam? Facere, amet praesentium.</p>
         </div>
     )

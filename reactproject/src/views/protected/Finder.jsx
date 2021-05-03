@@ -28,9 +28,6 @@ function Finder() {
                 <CosmetCard/>
                 <CosmetCard/>
                 <CosmetCard/>
-                <CosmetCard/>
-                <CosmetCard/>
-                <CosmetCard/>
             </div>
         </div>
     )
