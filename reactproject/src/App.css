@@ -59,6 +59,10 @@
   border-radius: 25px;
 }
 
+#logo {
+  padding-right: 0px;
+}
+
 #title {
   padding-left: 0px;
 }

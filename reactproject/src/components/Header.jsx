@@ -17,7 +17,7 @@ function Header() {
     return (
         <div className='Header'>
             <Menu borderless>
-                <Menu.Item name='logo'>
+                <Menu.Item id='logo' name='logo'>
                     <img className='logo' src={logo} alt='logo'></img>
                 </Menu.Item>
                 <Menu.Item id='title'>
