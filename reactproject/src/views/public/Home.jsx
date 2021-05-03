@@ -7,7 +7,7 @@ function Home() {
     return (
         <div className='Home'>
             <h1>Our Mission</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quos maiores itaque tempora rem nostrum, consequuntur consequatur pariatur beatae dolores minus aut nulla officiis odit quisquam neque sapiente ab autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ratione et. Impedit accusamus quia eveniet deleniti ab hic veniam nihil. Vitae delectus nihil amet nisi ducimus iste atque ratione itaque!</p>
+            <p>Our mission here at Beauty Look-Up is to streamline your beautification needs! No more sifting through individual cosmetologist's Facebook pages to find the professional you want. You can find all licensed cosmetologists, estheticians, nail technicians, and more all in one place with this tool. You can search for the highest-rated professionals and book an appointment with them right here! You can also leave reviews to let others know the quality of service you received from each individual technician. Now what are you waiting for? Find a specialist today and book an appointment to start feeling beautiful again!</p>
             <Link to='/login'><Button>Get Started</Button></Link>
         </div>
     )
