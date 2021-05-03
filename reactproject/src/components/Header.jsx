@@ -24,12 +24,12 @@ function Header() {
                     <h2>Beauty Look-Up</h2>
                 </Menu.Item>
                 <Menu.Item link name='home' active={location.pathname === '/home'}>
-                    <Link to='/home'>Home</Link>
+                    <Link to='/home'><i class="home icon"></i>Home</Link>
                 </Menu.Item>
                 {
                     isAuthed && (
                         <Menu.Item link name='finder' active={location.pathname === '/finder'}>
-                            <Link to='/finder'>Finder</Link>
+                            <Link to='/finder'><i class="search icon"></i>Finder</Link>
                         </Menu.Item>
                     )
                 }
@@ -37,7 +37,7 @@ function Header() {
                     !isAuthed && (
                         <Menu.Menu position='right'>
                             <Menu.Item link name='login' active={location.pathname === '/login'}>
-                                <Link to='/login'>Log In</Link>
+                                <Link to='/login'><i class="sign in alternate icon"></i>Log In</Link>
                             </Menu.Item>
                         </Menu.Menu>
                     )
@@ -46,10 +46,10 @@ function Header() {
                     isAuthed && (
                         <Menu.Menu position='right'>
                             <Menu.Item link name='profile' active={location.pathname === '/profile'}>
-                                <Link to='/profile'>Profile</Link>
+                                <Link to='/profile'><i class="user circle icon"></i>Profile</Link>
                             </Menu.Item>
                             <Menu.Item link name='logout' active={location.pathname === '/logout'}>
-                                <Link to='/logout'>Log Out</Link>
+                                <Link to='/logout'><i class="sign out alternate icon"></i>Log Out</Link>
                             </Menu.Item>
                         </Menu.Menu>
                     )
