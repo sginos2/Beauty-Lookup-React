@@ -18,7 +18,7 @@ function Login(props) {
         setCredentials({
             ...credentials,
             [name]: value
-        })
+        });
     }
     return (
         <div className='Login'>

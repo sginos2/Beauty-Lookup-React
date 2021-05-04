@@ -121,3 +121,12 @@
   align-items: center; */
   padding: 15px;
 }
+
+.profile {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.appointments {
+  background-color: #dadfea;
+}
