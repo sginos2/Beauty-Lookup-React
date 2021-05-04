@@ -10,7 +10,7 @@ let cosmetologists =
         image: 'https://st3.depositphotos.com/2783505/16822/i/600/depositphotos_168224322-stock-photo-passport-picture-of-a-smiling.jpg',
         description: 'Jane is a California-licensed manicurist and has been working in the industry for 7 years. She is trained in manicures, pedicures, acrylics, silk and linen wraps, dusting, and paraffin treatments.',
         services: ['Manicure', 'Pedicure', 'Wraps', 'Paraffin Treatments'],
-        rating: 4.5,
+        rating: 4,
         reviews: []
     },
     1: {
@@ -37,7 +37,7 @@ let cosmetologists =
         image: 'https://st2.depositphotos.com/2783505/9427/i/600/depositphotos_94278920-stock-photo-passport-picture-of-a-blonde.jpg',
         description: 'Carolyn is a California-licensed cosmetologist who specializes in makeup artistry and has been working in the industry for 9 years. She is trained in a wide range of makeup looks from prom to red-carpet to broadway.',
         services: ['Stage Makeup', 'Wedding Makeup', 'Traditional Makeup'],
-        rating: 4.5,
+        rating: 4,
         reviews: []
     },
     4: {

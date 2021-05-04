@@ -1,16 +1,14 @@
 //button will set isAuthed to false and take you to home page
 // import { useContext, useState } from 'react';
-// import { AuthContext } from '../../dataLayer/AuthContext';
+import { useAuthContext } from '../../dataLayer/AuthContext';
 // import { Redirect } from 'react-router-dom';
 import { Button } from 'semantic-ui-react';
 
 function Logout() {
-    // const { isAuthed } = useContext(AuthContext);
-    // const [credentials, setCredentials] = useState();
+    const { logout } = useAuthContext();
 
     const handleClick = () => {
-        //set isAuthed to false
-        //redirect to homepage
+        logout();
     }
 
     return (

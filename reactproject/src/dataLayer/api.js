@@ -6,6 +6,7 @@ function get(path) {
     .then(res => res.json())
     .then(timeout);
 }
+
 function post(path, body) {
     return fetch(`${apiUrl}${path}`, {
         method: 'POST',
@@ -17,6 +18,7 @@ function post(path, body) {
     .then(res => res.json())
     .then(timeout);
 }
+
 function put(path, body) {
     return fetch(`${apiUrl}${path}`, {
         method: 'PUT',
@@ -28,6 +30,7 @@ function put(path, body) {
     .then(res => res.json())
     .then(timeout);
 }
+
 function del(path) {
     return fetch(`${apiUrl}${path}`, {
         method: 'delete'
@@ -36,7 +39,7 @@ function del(path) {
     .then(timeout);
 }
 
-export default {
+module.exports = {
     get,
     post,
     put,

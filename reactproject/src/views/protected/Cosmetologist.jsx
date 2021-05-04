@@ -5,6 +5,7 @@
 import Reviews from '../../components/Reviews';
 import Booking from '../../components/Booking';
 import { Image } from 'semantic-ui-react';
+import LeaveReview from '../../components/LeaveReview';
 
 
 let cosmetologists = 
@@ -15,7 +16,7 @@ let cosmetologists =
         image: 'https://st3.depositphotos.com/2783505/16822/i/600/depositphotos_168224322-stock-photo-passport-picture-of-a-smiling.jpg',
         description: 'Jane is a California-licensed manicurist and has been working in the industry for 7 years. She is trained in manicures, pedicures, acrylics, silk and linen wraps, dusting, and paraffin treatments.',
         services: ['Manicure', 'Pedicure', 'Wraps', 'Paraffin Treatments'],
-        rating: 4.5,
+        rating: 4,
         reviews: []
     },
     1: {
@@ -42,7 +43,7 @@ let cosmetologists =
         image: 'https://st2.depositphotos.com/2783505/9427/i/600/depositphotos_94278920-stock-photo-passport-picture-of-a-blonde.jpg',
         description: 'Carolyn is a California-licensed cosmetologist who specializes in makeup artistry and has been working in the industry for 9 years. She is trained in a wide range of makeup looks from prom to red-carpet to broadway.',
         services: ['Stage Makeup', 'Wedding Makeup', 'Traditional Makeup'],
-        rating: 4.5,
+        rating: 4,
         reviews: []
     },
     4: {
@@ -84,16 +85,13 @@ function IndividualCosmet() {
                     <p>{cosmetologists[0].name}<br/>{cosmetologists[0].title}<br/>Rating: {cosmetologists[0].rating}/5</p>
                 </div>
                 <div className='aboutcosmet'>
-                    <p>About:</p>
                     <p>{cosmetologists[0].description}</p>
+                    <LeaveReview/>
                 </div>
                 <div className='booking'>
                     <Booking/>
                 </div>
             </div>
-            {/* <div className='reviewtextbox'>
-                <LeaveReview/>
-            </div> */}
             <div className='reviewcards'>
                 <Reviews/>
                 <Reviews/>

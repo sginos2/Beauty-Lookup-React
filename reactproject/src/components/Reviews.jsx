@@ -1,6 +1,6 @@
 //on cosmetologist page, scroll to see review cards
 import userImage from '../assets/default-profile.jpeg';
-import { Image } from 'semantic-ui-react'
+import { Image } from 'semantic-ui-react';
 
 function Reviews() {
     return (

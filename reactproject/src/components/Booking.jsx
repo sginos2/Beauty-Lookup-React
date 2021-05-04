@@ -1,9 +1,6 @@
-//simple form with fields for name and phone number
-//date and time dropdowns
-//list of services and checkboxes next to them
 //all fields must be filled for form to submit
 //'book now' button will activate a toast with confirmation and will clear form fields
-import { Checkbox, Form, Input, Select } from 'semantic-ui-react'
+import { Checkbox, Form, Input, Select } from 'semantic-ui-react';
 
 let cosmetologists = 
 {
@@ -74,14 +71,14 @@ const options = [
     { key: '2', text: '2:00 PM', value: 'twoPM' },
     { key: '3', text: '3:00 PM', value: 'threePM' },
     { key: '4', text: '4:00 PM', value: 'fourPM' },
-]
+];
 
 function Booking() {
 
     return (
         <div className='bookappointment'>
             <h2>Book an Appointment</h2>
-            <Form>
+            <Form success>
                 <Form.Group widths='equal'>
                     <Form.Field required control={Input} label='First name:' placeholder='First name'/>
                     <Form.Field required control={Input} label='Last name:' placeholder='Last name'/>
@@ -98,7 +95,8 @@ function Booking() {
                     <input type='date'/>
                     <Form.Field control={Select} options={options} placeholder='Time'/>
                 </Form.Group>
-                <Form.Button content='Submit'>Book Now</Form.Button>
+                <Form.Button>Book Now</Form.Button>
+                {/* <Message success header='Booking Complete' content='Your appointment has been booked. Visit your profile page to view appointment details.'/> */}
             </Form>
         </div>
     )
