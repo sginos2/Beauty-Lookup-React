@@ -16,15 +16,17 @@ export function AuthProvider(props) {
       user,
       login: (user, callback) => {
         console.log(user);
-        api.post('/login', user).then(response => {
+        return api.post('/login', user).then(response => {
           if (response.authenticated) {
             setIsAuthed(true);
             setUser(response.user);
             callback && callback();
             localStorage.setItem('authed', true);
             localStorage.setItem('user', JSON.stringify(response.user));
+            return true;
           } else {
             setIsAuthed(false);
+            return 'Error';
           }
         })
       },

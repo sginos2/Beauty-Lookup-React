@@ -68,7 +68,7 @@ function Header() {
                 <ProtectedRoute exact path='/finder'>
                     <Finder/>
                 </ProtectedRoute>
-                <ProtectedRoute exact path='/cosmetologist'>
+                <ProtectedRoute exact path='/cosmetologist/:id'>
                     <IndividualCosmet/>
                 </ProtectedRoute>
                 <ProtectedRoute exact path='/finder'>

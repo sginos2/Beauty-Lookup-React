@@ -1,4 +1,4 @@
-import { Button, Form, Select } from 'semantic-ui-react';
+import { Button, Form, Select, TextArea } from 'semantic-ui-react';
 
 const ratings = [
     { key: '1', text: '1/5', value: 'one' },
@@ -14,7 +14,7 @@ function LeaveReview() {
             <Form success size={'tiny'}>
                 <Form.Field>
                     <label>Leave a Review</label>
-                    <input/>
+                    <TextArea/>
                 </Form.Field>
                 <Form.Field compact control={Select} options={ratings} placeholder='Rating:'/>
                 <Button size={'tiny'}>Submit</Button>

@@ -1,3 +1,5 @@
+import cosmetologists from './CosmetData';
+
 const timeout = res => new Promise((resolve) => setTimeout(() => resolve(res), 2000));
 const apiUrl = 'http://localhost:8020';
 
@@ -39,9 +41,27 @@ function del(path) {
     .then(timeout);
 }
 
-module.exports = {
+export default  {
     get,
     post,
     put,
     del
 };
+
+export const getCosmetData = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(cosmetologists);
+        }, 1000);
+    });
+}
+
+export const getCosmetologist = (id) => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(cosmetologists.find((c) => {
+                return c.id === id;
+            }));
+        }, 1000);
+    });
+}

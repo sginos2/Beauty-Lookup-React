@@ -6,15 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom' 
 import 'semantic-ui-css/semantic.min.css';
 import { AuthProvider } from './dataLayer/AuthContext';
+import { QueryClientProvider, QueryClient } from 'react-query';
+
+const client = new QueryClient();
 
 ReactDOM.render(
-  <React.StrictMode>
+  <QueryClientProvider client = {client}>
     <AuthProvider>
       <Router>
         <App />
       </Router>
     </AuthProvider>
-  </React.StrictMode>,
+  </QueryClientProvider>,
   document.getElementById('root')
 );
 reportWebVitals();

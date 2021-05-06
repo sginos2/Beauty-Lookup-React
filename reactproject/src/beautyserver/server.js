@@ -12,10 +12,10 @@ const userApi = new UserApi();
 // userApi.createUser({
 //   "firstName": "Shanna",
 //   "lastName": "Ginos",
-//   "email": "shananginos@gmail.com",
+//   "email": "shannaginos@gmail.com",
 //   "phone": "4352327661",
 //   "password": "password"
-// })
+// });
 
 app.get('/setup-db', async (req, res) => {
   userApi.migrate();

@@ -125,13 +125,16 @@
 }
 
 .profile {
-  width: 50%;
-  margin: 0 auto;
-  border: 1px solid #dadfea;
-  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .appointments {
   background-color: #dadfea;
   height: 100%;
+}
+
+.findertitle {
+  padding-top: 20px;
 }
