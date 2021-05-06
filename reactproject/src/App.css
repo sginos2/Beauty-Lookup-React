@@ -125,14 +125,20 @@
 }
 
 .profile {
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.appointments {
+.userinfobox {
+  border: 1px solid #dadfea;
+  padding: 15px;
+}
+
+.userinfo {
   background-color: #dadfea;
-  height: 100%;
+  padding: 10px;
 }
 
 .findertitle {

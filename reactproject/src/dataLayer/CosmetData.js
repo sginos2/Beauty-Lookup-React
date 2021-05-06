@@ -6,7 +6,7 @@ export default
         title: 'Nail Technician',
         image: 'https://st3.depositphotos.com/2783505/16822/i/600/depositphotos_168224322-stock-photo-passport-picture-of-a-smiling.jpg',
         description: 'Jane is a California-licensed manicurist and has been working in the industry for 7 years. She is trained in manicures, pedicures, acrylics, silk and linen wraps, dusting, and paraffin treatments.',
-        services: ['Manicure', 'Pedicure', 'Wraps', 'Paraffin Treatments'],
+        services: ['Manicure', 'Pedicure', 'Paraffin Treatments'],
         rating: 4,
         reviews: [
             {
@@ -32,7 +32,7 @@ export default
         title: 'Cosmetologist',
         image: 'https://st2.depositphotos.com/2783505/7767/i/600/depositphotos_77676422-stock-photo-passport-picture-of-a-blonde.jpg',
         description: 'Mary is a California-licensed cosmetologist and has bee working in the industry for 4 years. She is trained in hair styling and makeup artistry.',
-        services: ['Hairstyling', 'Makeup'],
+        services: ['Hairstyling', 'Makeup', 'Full Package'],
         rating: 4,
         reviews: [
             {
@@ -58,7 +58,7 @@ export default
         title: 'Esthetician',
         image: 'https://st2.depositphotos.com/2783505/8226/i/600/depositphotos_82263538-stock-photo-passport-picture-of-a-modern.jpg',
         description: 'Nancy is a California-licensed esthetician and has been working in the industry for 12 years. She is trained in facials, peels, micro-dermabrasions, and waxing.',
-        services: ['Facial', 'Waxing'],
+        services: ['Facial', 'Waxing', 'Micro-Dermabrasions'],
         rating: 5,
         reviews: [
             {
@@ -161,8 +161,8 @@ export default
         name: 'Kennedy Barron',
         title: 'Nail Technician',
         image: 'https://previews.123rf.com/images/sylv1rob1/sylv1rob11902/sylv1rob1190201038/118164788-portrait-for-documents-passport-photo-of-young-female-in-natural-look.jpg',
-        description: 'Kennedy is a California-licensed cosmetologist who specializes in nails and has been working in the industry for 3 years. She is trained in gel and acrylic manicures.',
-        services: ['Gel Manicure', 'Acrylic Manicure'],
+        description: 'Kennedy is a California-licensed cosmetologist who specializes in nails and has been working in the industry for 3 years. She is trained in gel and acrylic manicures and pedicures.',
+        services: ['Gel Manicure', 'Acrylic Manicure', 'Pedicure'],
         rating: 4,
         reviews: [            {
                 user: 'user1973',
@@ -187,7 +187,7 @@ export default
         title: 'Makeup Artist',
         image: 'https://previews.123rf.com/images/dimarik16/dimarik161803/dimarik16180300164/97377602-passport-portrait-of-young-caucasian-man-isolated-on-white-background.jpg',
         description: 'Timothy is a California-licensed cosmetologist who specializes in makeup artistry and has been working in the industry for 8 years. He is trained in high-fashion makeup looks.',
-        services: ['Full Face', 'Special Events'],
+        services: ['Full Face', 'Special Events', 'Headshot Makeup'],
         rating: 5,
         reviews: [            {
                 user: 'user1967',
@@ -210,7 +210,7 @@ export default
         id: 9,
         name: 'Jennifer Coolidge',
         title: 'Hair Stylist',
-        image: 'https://img.wallpapersafari.com/phone/1440/2560/18/8/F5cl3a.jpg',
+        image: 'https://previews.123rf.com/images/stylephotographs/stylephotographs1504/stylephotographs150400046/38856802-passport-photo-of-young-blonde-neutral-looking-woman.jpg',
         description: 'Jennifer is a California-licensed cosmetologist who specializes in hair coloring and has been working in the industry for 15 years. She is trained in bleaching, perms, balayages, and hair coloring.',
         services: ['Hair Coloring', 'Balayage', 'Perm'],
         rating: 4,

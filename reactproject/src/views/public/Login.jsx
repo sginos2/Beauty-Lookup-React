@@ -18,7 +18,7 @@ function Login(props) {
         login(credentials).then(response => {
             if (response === 'Error') {
                 setError(true);
-            }
+            } 
             setLoading(false);
         });
     }
@@ -39,6 +39,9 @@ function Login(props) {
                     <label>Password</label>
                     <input type="password" onChange={handleChange} name='password'/>
                 </Form.Field>
+                {loading && (
+                    <h2>Loading...</h2>
+                )}
                 {error && (
                     <Message>
                         <p>Email or password was incorrect.</p>
