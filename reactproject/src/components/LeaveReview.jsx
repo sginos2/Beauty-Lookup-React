@@ -1,4 +1,5 @@
-import { Button, Form, Select, TextArea } from 'semantic-ui-react';
+import { Button, Form, Select, TextArea, Message } from 'semantic-ui-react';
+import { useState } from 'react';
 
 const ratings = [
     { key: '1', text: '1/5', value: 'one' },
@@ -9,16 +10,28 @@ const ratings = [
 ];
 
 function LeaveReview() {
+
+    const [success, setSuccess] = useState();
+
+    const handleSubmit = () => {
+        setSuccess(true);
+        document.getElementById('reviewForm').reset();
+    }
+
     return (
         <div className='leavereview'>
-            <Form success size={'tiny'}>
+            <Form onSubmit={handleSubmit} size={'tiny'} id='reviewForm'>
                 <Form.Field>
                     <label>Leave a Review</label>
-                    <TextArea/>
+                    <TextArea required/>
                 </Form.Field>
                 <Form.Field compact control={Select} options={ratings} placeholder='Rating:'/>
-                <Button size={'tiny'}>Submit</Button>
-                {/* <Message success header='Review submitted' content='Your review of this professional has been submitted.'/> */}
+                {success && (
+                    <Message>
+                        <p>Your rating has been submitted for review.</p>
+                    </Message>
+                )}
+                <Button type='Submit' size={'tiny'}>Submit</Button>
             </Form>
         </div>
     )

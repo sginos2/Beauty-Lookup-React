@@ -1,9 +1,9 @@
 //'book now' button will activate a toast with confirmation and will clear form fields
-import { Checkbox, Form, Input, Select } from 'semantic-ui-react';
+import { Checkbox, Form, Input, Select, Message } from 'semantic-ui-react';
 import { getCosmetologist } from '../dataLayer/api';
 import { useParams } from 'react-router-dom';
 import { useQuery } from 'react-query';
-
+import { useState } from 'react';
 
 const options = [
     { key: '9', text: '9:00 AM', value: 'nineAM' },
@@ -20,11 +20,17 @@ function Booking() {
 
     const { id } = useParams();
     const { data: cosmetologist } = useQuery(['cosmetologist', id], () => getCosmetologist(Number(id)));
+    const [success, setSuccess] = useState();
+
+    const handleSubmit = () => {
+        setSuccess(true);
+        document.getElementById('appointmentForm').reset();
+    }
 
     return (
         <div className='bookappointment'>
             <h2>Book an Appointment</h2>
-            <Form success>
+            <Form onSubmit={handleSubmit} id='appointmentForm'>
                 <Form.Group widths='equal'>
                     <Form.Field required control={Input} label='First name:' placeholder='First name'/>
                     <Form.Field required control={Input} label='Last name:' placeholder='Last name'/>
@@ -35,14 +41,17 @@ function Booking() {
                     <Form.Field control={Checkbox} label={cosmetologist.services[0]}/>
                     <Form.Field control={Checkbox} label={cosmetologist.services[1]}/>
                     <Form.Field control={Checkbox} label={cosmetologist.services[2]}/>
-                    <Form.Field control={Checkbox} label={cosmetologist.services[3]}/>
                 </Form.Group>
                 <Form.Group>
                     <input type='date' required/>
                     <Form.Field control={Select} options={options} placeholder='Time' required/>
                 </Form.Group>
+                {success && (
+                    <Message>
+                        <p>Your appointment has been booked.</p>
+                    </Message>
+                )}
                 <Form.Button type='Submit'>Book Now</Form.Button>
-                {/* <Message success header='Booking Complete' content='Your appointment has been booked. Visit your profile page to view appointment details.'/> */}
             </Form>
         </div>
     )

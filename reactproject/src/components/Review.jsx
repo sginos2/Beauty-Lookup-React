@@ -6,7 +6,7 @@ function Review({ review }) {
 
     return (
         <div className='reviews'>
-            <div>
+            <div className='username'>
                 <Image src={userImage} avatar />
                 <span>{review.user}</span>
             </div>

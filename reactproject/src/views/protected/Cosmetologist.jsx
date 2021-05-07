@@ -1,5 +1,5 @@
 import Review from '../../components/Review';
-import Booking from '../../components/Booking';
+import FormExampleClearOnSubmit from '../../components/Booking';
 import { Image } from 'semantic-ui-react';
 import LeaveReview from '../../components/LeaveReview';
 import { getCosmetologist } from '../../dataLayer/api';
@@ -33,7 +33,7 @@ function IndividualCosmet() {
                     <LeaveReview/>
                 </div>
                 <div className='booking'>
-                    <Booking/>
+                    <FormExampleClearOnSubmit/>
                 </div>
             </div>
             <div className='reviewcards'>

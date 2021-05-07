@@ -70,7 +70,7 @@
 
 
 .individualcosmettop {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
   flex-direction: row;
@@ -117,6 +117,10 @@
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.reviews h4 {
+  margin-top: 10px;
 }
 
 .leavereview {
