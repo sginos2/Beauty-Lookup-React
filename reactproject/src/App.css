@@ -112,6 +112,10 @@
   margin: 15px;
 }
 
+.reviewtitle {
+  padding: 20px;
+}
+
 .reviewcards {
   display: flex;
   align-items: center;

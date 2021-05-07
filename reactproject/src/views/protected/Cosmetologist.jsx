@@ -36,8 +36,13 @@ function IndividualCosmet() {
                     <FormExampleClearOnSubmit/>
                 </div>
             </div>
-            <div className='reviewcards'>
-                {reviews.map((review, index) => <Review key = {index} review = {review}/>)}
+            <div className='reviewsection'>
+                <div className='reviewtitle'>
+                    <h2>Reviews</h2>
+                </div>
+                <div className='reviewcards'>
+                    {reviews.map((review, index) => <Review key = {index} review = {review}/>)}
+                </div>
             </div>
         </>
 

@@ -1,4 +1,4 @@
-export default 
+const data =
 [
     {
         id: 1,
@@ -233,3 +233,5 @@ export default
     }
     
 ];
+
+export default data;

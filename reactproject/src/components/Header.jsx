@@ -24,7 +24,7 @@ function Header() {
                     <h2>Beauty Look-Up</h2>
                 </Menu.Item>
                 <Menu.Item link name='home' active={location.pathname === '/home'}>
-                    <Link to='home'><i className="home icon"></i>Home</Link>
+                    <Link to='/home'><i className="home icon"></i>Home</Link>
                 </Menu.Item>
                 {
                     isAuthed && (
@@ -56,6 +56,9 @@ function Header() {
                 }
             </Menu>
             <Switch>
+                <Route exact path='/'>
+                    <Home/>
+                </Route>
                 <Route exact path='/home'>
                     <Home/>
                 </Route>

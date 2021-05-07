@@ -41,7 +41,7 @@ function del(path) {
     .then(timeout);
 }
 
-export default  {
+const api = {
     get,
     post,
     put,
@@ -65,3 +65,5 @@ export const getCosmetologist = (id) => {
         }, 1000);
     });
 }
+
+export default api;
