@@ -43,7 +43,7 @@ function Login(props) {
                     <h2>Loading...</h2>
                 )}
                 {error && (
-                    <Message>
+                    <Message negative>
                         <p>Email or password was incorrect.</p>
                     </Message>
                 )}
