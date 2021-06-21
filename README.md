@@ -7,3 +7,7 @@ To get app up and running:
 -- type npm start
 
 Good to go!
+
+Credentials to log in are:
+Email: shannaginos@gmail.com
+Password: password
