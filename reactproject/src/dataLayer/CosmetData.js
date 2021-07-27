@@ -1,10 +1,20 @@
+import jane from '../assets/jane-doe.jpeg';
+import mary from '../assets/mary-sue.jpeg';
+import nancy from '../assets/nancy-gray.jpeg';
+import carolyn from '../assets/carolyn-maxwell.jpeg';
+import jonathan from '../assets/jonathan-griswold.jpeg';
+import jaime from '../assets/jaime-finnegan.jpeg';
+import kennedy from '../assets/kennedy-barron.jpeg';
+import timothy from '../assets/timothy-maxwell.jpeg';
+import jennifer from '../assets/jennifer-coolidge.jpeg';
+
 const data =
 [
     {
         id: 1,
         name: 'Jane Doe',
         title: 'Nail Technician',
-        image: 'https://st3.depositphotos.com/2783505/16822/i/600/depositphotos_168224322-stock-photo-passport-picture-of-a-smiling.jpg',
+        image: jane,
         description: 'Jane is a California-licensed manicurist and has been working in the industry for 7 years. She is trained in manicures, pedicures, acrylics, silk and linen wraps, dusting, and paraffin treatments.',
         services: ['Manicure', 'Pedicure', 'Paraffin Treatments'],
         rating: 4,
@@ -30,7 +40,7 @@ const data =
         id: 2,
         name: 'Mary Sue',
         title: 'Cosmetologist',
-        image: 'https://st2.depositphotos.com/2783505/7767/i/600/depositphotos_77676422-stock-photo-passport-picture-of-a-blonde.jpg',
+        image: mary,
         description: 'Mary is a California-licensed cosmetologist and has bee working in the industry for 4 years. She is trained in hair styling and makeup artistry.',
         services: ['Hairstyling', 'Makeup', 'Full Package'],
         rating: 4,
@@ -56,7 +66,7 @@ const data =
         id: 3,
         name: 'Nancy Gray',
         title: 'Esthetician',
-        image: 'https://st2.depositphotos.com/2783505/8226/i/600/depositphotos_82263538-stock-photo-passport-picture-of-a-modern.jpg',
+        image: nancy,
         description: 'Nancy is a California-licensed esthetician and has been working in the industry for 12 years. She is trained in facials, peels, micro-dermabrasions, and waxing.',
         services: ['Facial', 'Waxing', 'Micro-Dermabrasions'],
         rating: 5,
@@ -82,7 +92,7 @@ const data =
         id: 4,
         name: 'Carolyn Maxwell',
         title: 'Makeup Artist',
-        image: 'https://st2.depositphotos.com/2783505/9427/i/600/depositphotos_94278920-stock-photo-passport-picture-of-a-blonde.jpg',
+        image: carolyn,
         description: 'Carolyn is a California-licensed cosmetologist who specializes in makeup artistry and has been working in the industry for 9 years. She is trained in a wide range of makeup looks from prom to red-carpet to broadway.',
         services: ['Stage Makeup', 'Wedding Makeup', 'Traditional Makeup'],
         rating: 4,
@@ -108,7 +118,7 @@ const data =
         id: 5,
         name: 'Jonathan Griswold',
         title: 'Hair Stylist',
-        image: 'https://thumbs.dreamstime.com/b/young-handsome-man-portrait-identity-card-passport-driver-licence-document-id-photo-concept-180761988.jpg',
+        image: jonathan,
         description: 'Jonathan is a California-licenced cosmetologist who specializes in hair-cutting and styling and has been working in the industry for 4 years. He is trained in cutting, coloring, and perming hair.',
         services: ['Hair Cut', 'Hair Color', 'Perm'],
         rating: 4,
@@ -134,7 +144,7 @@ const data =
         id: 6,
         name: 'Jaime Finnegan',
         title: 'Esthetician',
-        image: 'https://media.istockphoto.com/photos/portrait-of-an-african-american-man-with-glasses-picture-id502581380?k=6&m=502581380&s=612x612&w=0&h=574qb-a-HNWkmDqG0t4S14YnroyYARd4rAngvlj-IAk=',
+        image: jaime,
         description: 'Jaime is a California-licensed esthetician and has been working in the industry for 17 years. He is trained in specialty facials, gua-sha, and skincare consultations.',
         services: ['Specialty Facial', 'Gua-Sha Session', 'Skincare Consultation'],
         rating: 5,
@@ -160,7 +170,7 @@ const data =
         id: 7,
         name: 'Kennedy Barron',
         title: 'Nail Technician',
-        image: 'https://previews.123rf.com/images/sylv1rob1/sylv1rob11902/sylv1rob1190201038/118164788-portrait-for-documents-passport-photo-of-young-female-in-natural-look.jpg',
+        image: kennedy,
         description: 'Kennedy is a California-licensed cosmetologist who specializes in nails and has been working in the industry for 3 years. She is trained in gel and acrylic manicures and pedicures.',
         services: ['Gel Manicure', 'Acrylic Manicure', 'Pedicure'],
         rating: 4,
@@ -185,7 +195,7 @@ const data =
         id: 8,
         name: 'Timothy Maxwell',
         title: 'Makeup Artist',
-        image: 'https://previews.123rf.com/images/dimarik16/dimarik161803/dimarik16180300164/97377602-passport-portrait-of-young-caucasian-man-isolated-on-white-background.jpg',
+        image: timothy,
         description: 'Timothy is a California-licensed cosmetologist who specializes in makeup artistry and has been working in the industry for 8 years. He is trained in high-fashion makeup looks.',
         services: ['Full Face', 'Special Events', 'Headshot Makeup'],
         rating: 5,
@@ -210,7 +220,7 @@ const data =
         id: 9,
         name: 'Jennifer Coolidge',
         title: 'Hair Stylist',
-        image: 'https://previews.123rf.com/images/stylephotographs/stylephotographs1504/stylephotographs150400046/38856802-passport-photo-of-young-blonde-neutral-looking-woman.jpg',
+        image: jennifer,
         description: 'Jennifer is a California-licensed cosmetologist who specializes in hair coloring and has been working in the industry for 15 years. She is trained in bleaching, perms, balayages, and hair coloring.',
         services: ['Hair Coloring', 'Balayage', 'Perm'],
         rating: 4,
